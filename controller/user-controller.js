@@ -28,7 +28,7 @@ export const singupUser = async (request, response) => {
 export const loginUser = async (request, response) => {
 
     // check ki  username exists
-    console.log(request.body.username );
+    // console.log(request.body.username );
     let user = await User.findOne({ username: request.body.username });
     if (!user) {
         // console.log(user);
