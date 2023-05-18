@@ -12,7 +12,7 @@ conn.once("open",()=>{
     gfs=grid(conn.db,mongoose.mongo);
     gfs.collection('fs');
 })
-const url='http://localhost:8000';
+const url='https://blog-backend-vaibhav2.onrender.com';
 //i need an middleware for image conversion and uploading 
 export const uploadImage =(request,response)=>{
 if(!request.file){
